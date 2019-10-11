@@ -27,3 +27,32 @@
 [debug] [2019-10-11T21:31:03.228Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] +  hosting: Local server: http://localhost:5000
+[debug] [2019-10-11T23:12:45.728Z] ----------------------------------------------------------------------
+[debug] [2019-10-11T23:12:45.730Z] Command:       /usr/local/Cellar/node/12.9.0/bin/node /usr/local/bin/firebase serve
+[debug] [2019-10-11T23:12:45.730Z] CLI Version:   7.4.0
+[debug] [2019-10-11T23:12:45.730Z] Platform:      darwin
+[debug] [2019-10-11T23:12:45.730Z] Node Version:  v12.9.0
+[debug] [2019-10-11T23:12:45.731Z] Time:          Sat Oct 12 2019 01:12:45 GMT+0200 (Central European Summer Time)
+[debug] [2019-10-11T23:12:45.731Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-10-11T23:12:45.740Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-10-11T23:12:45.741Z] > authorizing via signed-in user
+[debug] [2019-10-11T23:12:45.741Z] [iam] checking project zkazkaz for permissions ["firebase.projects.get"]
+[debug] [2019-10-11T23:12:45.742Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-10-11T23:12:45.742Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-10-11T23:12:45.990Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-11T23:12:46.063Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/zkazkaz:testIamPermissions  
+
+[debug] [2019-10-11T23:12:47.061Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-11T23:12:47.062Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/zkazkaz  
+ 
+[debug] [2019-10-11T23:12:47.399Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/psenakv/hacky/tovarna/zkazkaz-web'...
+[info] 
+[debug] [2019-10-11T23:12:47.401Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/zkazkaz/webApps/-/config  
+ 
+[debug] [2019-10-11T23:12:47.884Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000

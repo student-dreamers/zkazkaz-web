@@ -14,24 +14,30 @@ if (!firebase.apps.length) {
 const database = firebase.firestore();
 const containerElement = document.getElementById("content");
 
-function readData(){
+async function readData(){
     let tests = [];
-    let i =0;
-    database.collection("photos").get().then((snapshot) => {
-       snapshot.forEach((doc) => {
-           tests[i] = new Test(doc);
-           i++;
-           console.log(doc);
-       });
-       console.log(snapshot);
+    let i = 0;
+    var photos = await database.collection("photos").get();
+    photos.forEach((doc) => {
+        tests[i] = new Test(doc.data());
+        i++;
     });
     return tests;
 
 }
 
-const data = readData();
-console.log(data);
-console.log("ok");
+readData().then(function(value) {
+    const data = value;
+    console.log(data);
+console.log(data.length);
+data.forEach(createTestBox);
+
+function createTestBox(item) {
+    new TestBox(item,containerElement);
+    console.log("test");
+}
 for (const test of data) {
     new TestBox(test,containerElement);
 }
+});
+

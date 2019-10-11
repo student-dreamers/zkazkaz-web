@@ -6,7 +6,9 @@ export class TestBox {
     }
 
     render() {
+        console.log("called");
         this.month = this.test.date.getMonth() + 1;
+        var url = "https://firebasestorage.googleapis.com/v0/b/zkazkaz.appspot.com/o/" + encodeURIComponent(this.test.image_name) + "?alt=media";
         this.targetElement.innerHTML = `
     <tr class="test">
         <td>
@@ -19,8 +21,8 @@ export class TestBox {
             <div>Chyba v {kde}</div>
         </td>
         <td class="photos">
-            ${this.test.image_name}
-            <!--<img src="">-->
+            
+            <img src="${url}">
         </td>
     </tr>
         `;

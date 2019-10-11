@@ -7,20 +7,32 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+<script src="/__/firebase/7.2.0/firebase-app.js"></script>
+
+<!-- Add Firebase products that you want to use -->
+<script src="/__/firebase/7.2.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-firestore.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+<script type="module" src="index.js"></script>
+
 <header>
-    <img class="logo" src="../1280px-ABB_logo.svg">
+    <img class="logo" src="1280px-ABB_logo.svg">
     <h1>Výsledky testů</h1>
     <div class="nav">
-        <span>Podrobný seznam</span>
-        <span>Statistiky</span>
+        <a href="/">Podrobný seznam</a>
+        <a href="statistic.html">Statistiky</a>
     </div>
 </header>
-<table class="content">
+<table class="content" id="content">
     <tr>
-        <th>Datum a čas</th>z
+        <th>Datum a čas</th>
         <th>Zaměstnanec</th>
         <th>Výsledek</th>
-        <th>Fotky</th>
+        <th>Fotka</th>
     </tr>
     <tr class="test">
         <td>

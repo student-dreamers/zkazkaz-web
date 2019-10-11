@@ -6,10 +6,21 @@ header .logo {
   width: 250px;
   height: auto;
   margin: auto;
+  margin-top: 50px;
   display: block;
 }
-header .nav span {
-  margin: 50px;
+header .nav a {
+  padding: 10px;
+  margin: 30px;
+  text-decoration: none;
+  color: black;
+  background-color: #ff0006;
+  border-radius: 3px;
+  display: inline-block;
+}
+header .nav a:hover {
+  background-color: #b30003;
+  color: white;
 }
 .content {
   margin-top: 150px;

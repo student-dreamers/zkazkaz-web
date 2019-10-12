@@ -6,10 +6,11 @@ export class TestBox {
     }
 
     render() {
-        console.log("called");
+        this.container = document.createElement('tr');
+        this.container.classList.add('test');
         this.month = this.test.date.getMonth() + 1;
         var url = "https://firebasestorage.googleapis.com/v0/b/zkazkaz.appspot.com/o/" + encodeURIComponent(this.test.image_name) + "?alt=media";
-        this.targetElement.innerHTML = `
+        this.container.innerHTML = `
     <tr class="test">
         <td>
             <div class="date">${this.test.date.getDate()}. ${this.month}. ${this.test.date.getFullYear()}</div>
@@ -26,5 +27,6 @@ export class TestBox {
         </td>
     </tr>
         `;
+        this.targetElement.appendChild(this.container);
     }
 }

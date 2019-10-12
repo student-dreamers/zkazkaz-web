@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <title>Zkaz Kaz</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <header>
-    <img class="logo" src="1280px-ABB_logo.svg">
+    <img class="logo" src="abb.png">
     <h1>Výsledky testů</h1>
     <div class="nav">
-        <a href="index.html">Podrobný seznam</a>
-        <a href="/">Statistiky</a>
+        <a href="/">Podrobný seznam</a>
+        <a href="statistic.html">Statistiky</a>
     </div>
 </header>
 
@@ -27,7 +28,16 @@
 <!-- Initialize Firebase -->
 <script src="/__/firebase/init.js"></script>
 
-<script src="index.js"></script>
+<div class="sloupce">
+    <canvas id="myChart"></canvas>
+    <canvas id="max"></canvas>
+</div>
 
+<script src="node_modules/chart.js/dist/Chart.js"></script>
+
+<script type="module" src="charts.js"></script>
+
+
+<div id="content" style="display: none"></div>
 </body>
 </html>

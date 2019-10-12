@@ -1,6 +1,7 @@
 header {
   text-align: center;
   font-size: 1.6em;
+  font-family: 'Roboto', sans-serif;
 }
 header .logo {
   width: 250px;
@@ -13,7 +14,7 @@ header .nav a {
   padding: 10px;
   margin: 30px;
   text-decoration: none;
-  color: black;
+  color: white;
   background-color: #ff0006;
   border-radius: 3px;
   display: inline-block;
@@ -26,6 +27,7 @@ header .nav a:hover {
   margin-top: 150px;
   width: 50%;
   margin: auto;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   border-collapse: collapse;
 }
@@ -41,5 +43,11 @@ table,
 th,
 td {
   border: 1px solid lightgray;
+}
+.sloupce {
+  width: 50%;
+  height: 500px;
+  display: inline-flex;
+  justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */

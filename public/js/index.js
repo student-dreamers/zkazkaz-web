@@ -33,17 +33,5 @@ data.forEach(createTestBox);
 function createTestBox(item) {
     new TestBox(item,containerElement);
 }
-let day11 = 0, day12 = 0;
-async function date(data) {
-    for (const item of data){
-        if(item.date.getDate() == 12){
-            day12++;
-        } else {
-            day11++;
-        }
-    }
-}
-date(data).then(renderChart(day11,day12));
-
 });
 

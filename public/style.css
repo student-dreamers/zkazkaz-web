@@ -45,9 +45,52 @@ td {
   border: 1px solid lightgray;
 }
 .sloupce {
-  width: 50%;
+  width: 48%;
   height: 500px;
   display: inline-flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about {
+  margin-top: 90px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6em;
+}
+.about .my {
+  margin-top: 80px;
+  width: 60%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.about .my .jeden img {
+  border-radius: 50%;
+  width: 250px;
+  height: auto;
+}
+.about .my .jeden div {
+  margin-top: 10px;
+}
+.about .my .jeden .popis {
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+.about .odkazy {
+  margin-top: 100px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.about .odkazy a {
+  padding: 10px;
+  margin: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #ff0006;
+  border-radius: 3px;
+}
+.about .odkazy a:hover {
+  background-color: #b30003;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

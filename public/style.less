@@ -50,8 +50,55 @@ table, th, td {
     border: 1px solid lightgray;
 }
 .sloupce {
-    width: 50%;
+    width: 48%;
     height: 500px;
     display: inline-flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about{
+    margin-top: 90px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6em;
+    .my {
+        margin-top: 80px;
+        width: 60%;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .jeden{
+            img {
+                border-radius: 50%;
+                width: 250px;
+                height: auto;
+            }
+            div {
+                margin-top: 10px;
+            }
+            .popis {
+                margin-bottom: 40px;
+                font-size: 18px;
+            }
+        }
+    }
+    .odkazy {
+        margin-top: 100px;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        a {
+            padding: 10px;
+            margin: 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #ff0006;
+            border-radius: 3px;
+        }
+
+        a:hover {
+            background-color: #b30003;
+            color: white;
+        }
+
+    }
 }

@@ -6,6 +6,11 @@ export class TestBox {
     }
 
     render() {
+        if(Math.floor(Math.random() * 4) == 0) {
+            this.result = "Chyba"
+        } else {
+            this.result = "V pořádku";
+        }
         this.container = document.createElement('tr');
         this.container.classList.add('test');
         this.month = this.test.date.getMonth() + 1;
@@ -18,8 +23,7 @@ export class TestBox {
         </td>
         <td class="author">${this.test.user_id}</td>
         <td class="result">
-            <div>V pořádku</div>
-            <div>Chyba v {kde}</div>
+            <div>${this.result}</div>
         </td>
         <td class="photos">
             
